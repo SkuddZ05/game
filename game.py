@@ -1,10 +1,10 @@
 import pygame
 WIDTH, HEIGHT, FPS = 800, 600, 60
-NAVY = (9, 24, 43)
+BLACK= (0, 0, 0)
 def run_game():
     pygame.init()
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption("Star Catcher")
+    pygame.display.set_caption("Southern Velocity")
     clock = pygame.time.Clock()
     running = True
     while running:
@@ -12,17 +12,9 @@ def run_game():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-        screen.fill(NAVY)
+        screen.fill(BLACK)
         pygame.display.flip()
     pygame.quit()
 if __name__ == "__main__":
  run_game()
-
-#greeting the user
-#print("Hello")
-
-
-#ask user for name, save as variable
-#name = input("What is your name? ").capitalize()
-#if name == "Ollie" or "Oli":
-    #print("Yes! Me too!!")
+ # Loading Screen
